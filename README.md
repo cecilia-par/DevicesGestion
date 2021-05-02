@@ -9,7 +9,7 @@ Télécharger le projet
 
 ### Installation
 
-- Avoir .NET 5.0 installer 
+- Avoir .NET 5.0 installé
 
 - Ouvrir le projet dans Visual Studio
 
