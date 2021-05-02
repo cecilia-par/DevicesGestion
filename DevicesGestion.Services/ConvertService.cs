@@ -82,7 +82,7 @@ namespace DevicesGestion.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error getRate : " + ex.Message);
+                Console.WriteLine($"Error getRate : {ex.Message}");
                 return 0;
             }
             
