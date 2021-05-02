@@ -36,6 +36,7 @@ namespace DevicesGestion.Services
             if (convertResult.Count() > 0)
             {
                 var result = ApplyRates(request.Amount, convertResult.ToList());
+                if (result == 0) return ErrorMessage.WRONG_RESULT_REQUEST;
                 return Math.Round(result, MidpointRounding.AwayFromZero).ToString();
             }
             return ErrorMessage.WRONG_RESULT_REQUEST;
@@ -66,17 +67,25 @@ namespace DevicesGestion.Services
         /// <returns></returns>
         private decimal GetRate(string sourceCurrency, string targetCurrency)
         {
-            decimal? sourceToTargetRate;
-            decimal targetToSourceRate = 0.0000m;
-
-            sourceToTargetRate = ExchangeRates.SingleOrDefault(er => er.SourceCurrency.Equals(sourceCurrency) && er.TargetCurrency.Equals(targetCurrency))?.Rate;
-            if (!sourceToTargetRate.HasValue)
+            try
             {
-                targetToSourceRate = ExchangeRates.SingleOrDefault(er => er.SourceCurrency.Equals(targetCurrency) && er.TargetCurrency.Equals(sourceCurrency)).Rate;
-                if(targetToSourceRate != 0.0000m)
-                targetToSourceRate = decimal.Round((1 / targetToSourceRate), 4, MidpointRounding.AwayFromZero);
+                decimal? sourceToTargetRate;
+                decimal targetToSourceRate = 0.0000m;
+
+                sourceToTargetRate = ExchangeRates.SingleOrDefault(er => er.SourceCurrency.Equals(sourceCurrency) && er.TargetCurrency.Equals(targetCurrency))?.Rate;
+                if (!sourceToTargetRate.HasValue)
+                {
+                    targetToSourceRate = ExchangeRates.SingleOrDefault(er => er.SourceCurrency.Equals(targetCurrency) && er.TargetCurrency.Equals(sourceCurrency)).Rate;                
+                    targetToSourceRate = decimal.Round((1 / targetToSourceRate), 4, MidpointRounding.AwayFromZero);
+                }
+                return sourceToTargetRate ?? targetToSourceRate;
             }
-            return sourceToTargetRate ?? targetToSourceRate;
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error getRate : " + ex.Message);
+                return 0;
+            }
+            
         }
     }
 }
