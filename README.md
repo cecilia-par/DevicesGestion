@@ -27,7 +27,7 @@ Pour les projets DevicesGestion.Infrastructure.UnitTests et DevicesGestion.Servi
 
 - Ouvrir une invite de commande
 - Aller à la racine du projet /bin/Release/net5.0 (commande cd + Path)
-- Faire LuccaDevises <chemin vers le fichier>
+- Entrer la commande ```LuccaDevises <chemin vers le fichier> ```
 
 ## Exemple de fichier 
 
