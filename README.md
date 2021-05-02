@@ -9,6 +9,8 @@ Télécharger le projet
 
 ### Installation
 
+- Avoir .NET 5.0 installer 
+
 - Ouvrir le projet dans Visual Studio
 
 Pour le projet DevicesGestion: 
