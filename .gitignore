@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/DevicesGestion/.vs/DevicesGestion
+debug
+obj
+DevicesGestion.Infrastructure/bin
+DevicesGestion.Models/bin
+DevicesGestion.Services/bin
+Test/DevicesGestion.Infrastructure.UnitTests/bin
+Test/DevicesGestion.Services.UnitTests/bin

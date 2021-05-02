@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{71F6F49D-6BE8-4345-9415-86F6C23703ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6F837D10-0F00-44A9-9BFF-6BEC2AEAEEB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevicesGestion", "Application\DevicesGestion\DevicesGestion.csproj", "{656E16FD-C4EA-4A7A-A813-303535656ECC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevicesGestion.Models", "DevicesGestion.Models\DevicesGestion.Models.csproj", "{A3635F07-E04E-455E-849C-968BCF091A23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevicesGestion.Services", "DevicesGestion.Services\DevicesGestion.Services.csproj", "{F912CE3A-FEA9-42FC-A91D-A63DF7951533}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevicesGestion.Infrastructure", "DevicesGestion.Infrastructure\DevicesGestion.Infrastructure.csproj", "{543C276D-982A-4846-87E8-E217BE61DF68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevicesGestion.Infrastructure.UnitTests", "Test\DevicesGestion.Infrastructure.UnitTests\DevicesGestion.Infrastructure.UnitTests.csproj", "{9C520602-AED0-48FA-BD9C-112654870EF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestCase", "TestCase", "{7020FE42-9D10-482D-B4EE-A298AE067F3F}"
+	ProjectSection(SolutionItems) = preProject
+		..\TestCase\complexTestCase.txt = ..\TestCase\complexTestCase.txt
+		..\TestCase\EmptyTestCase.txt = ..\TestCase\EmptyTestCase.txt
+		..\TestCase\reverseTestCase.txt = ..\TestCase\reverseTestCase.txt
+		..\TestCase\testCase.txt = ..\TestCase\testCase.txt
+		..\TestCase\wrongTestCase.txt = ..\TestCase\wrongTestCase.txt
+		..\TestCase\wrongTestCase1.txt = ..\TestCase\wrongTestCase1.txt
+		..\TestCase\wrongTestCase10.txt = ..\TestCase\wrongTestCase10.txt
+		..\TestCase\wrongTestCase11.txt = ..\TestCase\wrongTestCase11.txt
+		..\TestCase\wrongTestCase12_NotResult.txt = ..\TestCase\wrongTestCase12_NotResult.txt
+		..\TestCase\wrongTestCase13.txt = ..\TestCase\wrongTestCase13.txt
+		..\TestCase\wrongTestCase14.txt = ..\TestCase\wrongTestCase14.txt
+		..\TestCase\wrongTestCase15.txt = ..\TestCase\wrongTestCase15.txt
+		..\TestCase\wrongTestCase16.txt = ..\TestCase\wrongTestCase16.txt
+		..\TestCase\wrongTestCase2.txt = ..\TestCase\wrongTestCase2.txt
+		..\TestCase\wrongTestCase3.txt = ..\TestCase\wrongTestCase3.txt
+		..\TestCase\wrongTestCase4.txt = ..\TestCase\wrongTestCase4.txt
+		..\TestCase\wrongTestCase5.txt = ..\TestCase\wrongTestCase5.txt
+		..\TestCase\wrongTestCase6.txt = ..\TestCase\wrongTestCase6.txt
+		..\TestCase\wrongTestCase7.txt = ..\TestCase\wrongTestCase7.txt
+		..\TestCase\wrongTestCase8.txt = ..\TestCase\wrongTestCase8.txt
+		..\TestCase\wrongTestCase9.txt = ..\TestCase\wrongTestCase9.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevicesGestion.Services.UnitTests", "Test\DevicesGestion.Services.UnitTests\DevicesGestion.Services.UnitTests.csproj", "{4744F7C3-93B8-4D32-BFC8-F7A7C6AAAC1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{49CEA2B5-0F55-4339-8005-FC42EDD3B5DC}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{656E16FD-C4EA-4A7A-A813-303535656ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656E16FD-C4EA-4A7A-A813-303535656ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656E16FD-C4EA-4A7A-A813-303535656ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656E16FD-C4EA-4A7A-A813-303535656ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3635F07-E04E-455E-849C-968BCF091A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3635F07-E04E-455E-849C-968BCF091A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3635F07-E04E-455E-849C-968BCF091A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3635F07-E04E-455E-849C-968BCF091A23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F912CE3A-FEA9-42FC-A91D-A63DF7951533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F912CE3A-FEA9-42FC-A91D-A63DF7951533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F912CE3A-FEA9-42FC-A91D-A63DF7951533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F912CE3A-FEA9-42FC-A91D-A63DF7951533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{543C276D-982A-4846-87E8-E217BE61DF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543C276D-982A-4846-87E8-E217BE61DF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543C276D-982A-4846-87E8-E217BE61DF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543C276D-982A-4846-87E8-E217BE61DF68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C520602-AED0-48FA-BD9C-112654870EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C520602-AED0-48FA-BD9C-112654870EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C520602-AED0-48FA-BD9C-112654870EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C520602-AED0-48FA-BD9C-112654870EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4744F7C3-93B8-4D32-BFC8-F7A7C6AAAC1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4744F7C3-93B8-4D32-BFC8-F7A7C6AAAC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4744F7C3-93B8-4D32-BFC8-F7A7C6AAAC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4744F7C3-93B8-4D32-BFC8-F7A7C6AAAC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{656E16FD-C4EA-4A7A-A813-303535656ECC} = {71F6F49D-6BE8-4345-9415-86F6C23703ED}
+		{9C520602-AED0-48FA-BD9C-112654870EF1} = {6F837D10-0F00-44A9-9BFF-6BEC2AEAEEB1}
+		{4744F7C3-93B8-4D32-BFC8-F7A7C6AAAC1C} = {6F837D10-0F00-44A9-9BFF-6BEC2AEAEEB1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5CC091B3-5946-4F79-B396-3EECEF5F95B7}
+	EndGlobalSection
+EndGlobal
