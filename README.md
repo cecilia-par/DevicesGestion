@@ -27,18 +27,20 @@ Pour les projets DevicesGestion.Infrastructure.UnitTests et DevicesGestion.Servi
 
 - Ouvrir une invite de commande
 - Aller à la racine du projet /bin/Release/net5.0 (commande cd + Path)
-- Faire LuccaDevises <chemin vers le fichier>
+- Entrer la commande ```LuccaDevises <chemin vers le fichier> ```
 
 ## Exemple de fichier 
 
-EUR;550;JPY
-6
-AUD;CHF;0.9661
-JPY;KRW;13.1151
-EUR;CHF;1.2053
-AUD;JPY;86.0305
-EUR;USD;1.2989
-JPY;INR;0.6571
+  ```
+  EUR;550;JPY
+  6
+  AUD;CHF;0.9661
+  JPY;KRW;13.1151
+  EUR;CHF;1.2053
+  AUD;JPY;86.0305
+  EUR;USD;1.2989
+  JPY;INR;0.6571
+  ```
 
 ## Fabriqué avec
 
