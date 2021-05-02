@@ -73,6 +73,7 @@ namespace DevicesGestion.Services
             if (!sourceToTargetRate.HasValue)
             {
                 targetToSourceRate = ExchangeRates.SingleOrDefault(er => er.SourceCurrency.Equals(targetCurrency) && er.TargetCurrency.Equals(sourceCurrency)).Rate;
+                if(targetToSourceRate != 0.0000m)
                 targetToSourceRate = decimal.Round((1 / targetToSourceRate), 4, MidpointRounding.AwayFromZero);
             }
             return sourceToTargetRate ?? targetToSourceRate;
