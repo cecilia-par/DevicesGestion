@@ -32,7 +32,7 @@ namespace DevicesGestion.Models
              SourceCurrency = line.Substring(0, Constants.SEPARATOR_NUMBER);
             TargetCurrency = line.Substring(line.IndexOf(Constants.SEPARATOR) + 1, Constants.SEPARATOR_NUMBER);
             bool isValid = decimal.TryParse(line.Substring(line.LastIndexOf(Constants.SEPARATOR) + 1,
-                                       line.Length - line.LastIndexOf(Constants.SEPARATOR) - 1), NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture, out decimal rate);
+                line.Length - line.LastIndexOf(Constants.SEPARATOR) - 1), NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture, out decimal rate);
             Rate = isValid ? rate : 0;
         }
     }
